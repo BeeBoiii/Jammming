@@ -3,9 +3,9 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  root: 'public',
+  //root: 'public',
   plugins: [react()],
-  build: {
+  /*build: {
     outDir: '../dist'
-  }
+  }*/
 })
