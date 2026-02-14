@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-function SearchBar() {
+function SearchBar(prop) {
     const [userInput, setUserInput] = useState('')
 
     return (
@@ -12,7 +12,8 @@ function SearchBar() {
                 value={userInput} 
                 onChange={(e) => setUserInput(e.target.value)}
             />
-            <button>Search</button>
+            {/*button isn't finished yet*/}
+            <button onClick={prop}>Search</button>
         </form>
     )
 }
